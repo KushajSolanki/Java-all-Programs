@@ -1,8 +1,8 @@
-import java.util.*;
+import java.util.Scanner;
 public class inputword {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String name = sc.next();
-        System.out.println(name);
+        String b = sc.next();
+        System.out.println(b);
     }
 }
