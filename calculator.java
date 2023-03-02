@@ -7,23 +7,24 @@ public class calculator {
         System.out.println("3:MULTIPLICATION");
         System.out.println("4:DIVISION");
         int button = sc.nextInt();
+        operations op=new operations();
         switch(button){
-            case 1 : addition h=new addition(); h.display();
+            case 1 : op.addition();
             break;
-            case 2 : subtraction j=new subtraction(); j.display();
+            case 2 : op.subtraction();
             break;
-            case 3 : multiplication k=new multiplication(); k.display();
+            case 3 : op.multiplication();
             break;
-            case 4 : division l=new division(); l.display();
+            case 4 : op.division();
             break;
             default : System.out.println("Choose between 1 to 4");
             
         }
     } 
 }
-class addition{
+class operations{
     Scanner sc = new Scanner(System.in);
-    void display(){
+    void addition(){
     System.out.print("Enter value of a = ");
     int a = sc.nextInt();
     System.out.print("Enter value of b = ");
@@ -31,10 +32,7 @@ class addition{
     int c = a+b;
     System.out.println("Sum = "+c);
     }
-}
-class subtraction{
-    Scanner sc = new Scanner(System.in);
-    void display(){
+    void subtraction(){
         System.out.print("Enter value of a = ");
     int a = sc.nextInt();
     System.out.print("Enter value of b = ");
@@ -42,10 +40,7 @@ class subtraction{
     int c = a-b;
     System.out.println("Difference = "+c);
     }
-}
-class multiplication{
-    Scanner sc = new Scanner(System.in);
-    void display(){
+    void multiplication(){
         System.out.print("Enter value of a = ");
     int a = sc.nextInt();
     System.out.print("Enter value of b = ");
@@ -53,10 +48,7 @@ class multiplication{
     int c = a*b;
     System.out.println("Product = "+c);
     }
-}
-class division{
-    Scanner sc = new Scanner(System.in);
-    void display(){
+    void division(){
         System.out.print("Enter value of a = ");
     int a = sc.nextInt();
     System.out.print("Enter value of b = ");
