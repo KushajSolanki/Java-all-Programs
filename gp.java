@@ -28,5 +28,4 @@ public class gp
   double result=(SUM(a));
   System.out.println(result);  
   }  
-}  
-
+}
