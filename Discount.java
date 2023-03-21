@@ -82,9 +82,9 @@ class HomeAppliances extends Electronics{
 public class Discount {
 	public static void main(String[] args) 
 	{
-		Amazon obj=new Textile("US POLO Shirt",3.8,6000,1);
-		Amazon obj1=new Electronics("Laptop",4.6,80000,0.5);
-		Amazon obj2=new HomeAppliances("Philips Bulb",4.2,60,2);
+		Amazon obj=new Textile("Kurta",4,6000,1);
+		Amazon obj1=new Electronics("Ipad",4.6,90000,0.5);
+		Amazon obj2=new HomeAppliances("Dish Washer",4.2,60000,2);
 		
 		double DisOnShirt=obj.Offer();
 		double DisOnLaptop=obj1.Offer();
