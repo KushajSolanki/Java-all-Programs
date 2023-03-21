@@ -84,19 +84,19 @@ public class Discount {
 	{
 		Amazon obj=new Textile("Kurta",4,6000,1);
 		Amazon obj1=new Electronics("Ipad",4.6,90000,0.5);
-		Amazon obj2=new HomeAppliances("Dish Washer",4.2,60000,2);
+		Amazon obj2=new HomeAppliances("DishWasher",4.2,60000,2);
 		
-		double DisOnShirt=obj.Offer();
-		double DisOnLaptop=obj1.Offer();
-		double DisOnBulb=obj2.Offer();
+		double DisOnKurta=obj.Offer();
+		double DisOnIpad=obj1.Offer();
+		double DisOnDishWasher=obj2.Offer();
 		
-		System.out.println(obj.name+" that has a rating of "+obj.rating+" and price of "+obj.price+" has a discount of "+DisOnShirt+"%");
-		System.out.println(obj1.name+" that has a rating of "+obj1.rating+" and price of "+obj1.price+" has a discount of "+DisOnLaptop+"%");
-		System.out.println(obj2.name+" that has a rating of "+obj2.rating+" and price of "+obj2.price+" has a discount of "+DisOnBulb+"%");
+		System.out.println(obj.name+" that has a rating of "+obj.rating+" and price of "+obj.price+" has a discount of "+DisOnKurta+"%");
+		System.out.println(obj1.name+" that has a rating of "+obj1.rating+" and price of "+obj1.price+" has a discount of "+DisOnIpad+"%");
+		System.out.println(obj2.name+" that has a rating of "+obj2.rating+" and price of "+obj2.price+" has a discount of "+DisOnDishWasher+"%");
 		
-		System.out.println("New price of "+obj.name+" is "+(obj.price-(obj.price)*DisOnShirt/100));
-		System.out.println("New price of "+obj1.name+" is "+(obj1.price-(obj1.price)*DisOnLaptop/100));
-		System.out.println("New price of "+obj2.name+" is "+(obj2.price-(obj2.price)*DisOnBulb/100));
+		System.out.println("New price of "+obj.name+" is "+(obj.price-(obj.price)*DisOnKurta/100));
+		System.out.println("New price of "+obj1.name+" is "+(obj1.price-(obj1.price)*DisOnIpad/100));
+		System.out.println("New price of "+obj2.name+" is "+(obj2.price-(obj2.price)*DisOnDishWasher/100));
 		
 	}
 
