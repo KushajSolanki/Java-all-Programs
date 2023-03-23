@@ -79,7 +79,7 @@ class HomeAppliances extends Electronics{
 	}
 }
 
-public class Discount {
+public class r {
 	public static void main(String[] args) 
 	{
 		Amazon obj=new Textile("Kurta",4,6000,1);
